@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 public class User
 {
     private string username { get; set; }
@@ -107,15 +108,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World!");
-
         // Initialize dependencies
         DatabaseManager databaseManager = new DatabaseManager();
         ATM atm = new ATM(databaseManager);
 
+        string login;
+        int 
+
         // Start ATM system
         // atm.start();
 
-        Console.WriteLine("Hello World!");
+        Console.WriteLine("Please provide login and pin:");
+        Console.ReadLine();
     }
 }
